@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.csprojAssemblyReference.cache
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.Form1.resources
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.Properties.Resources.resources
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.GenerateResource.cache
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe.config
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\bin\Debug\FormsAppEvoX.pdb
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb
+C:\Users\user\source\repos\FormsAppEvoX\FormsAppEvoX\obj\Debug\FormsAppEvoX.Form2.resources
