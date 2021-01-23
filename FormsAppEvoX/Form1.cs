@@ -30,11 +30,9 @@ namespace FormsAppEvoX
         
 
         
- private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
-
-
-         Form2 form = new Form2();
+            GameForm form = new GameForm("Destiry"); 
             form.Show();
         }
 
@@ -45,15 +43,22 @@ namespace FormsAppEvoX
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            GameForm form = new GameForm("CS: GO");
+            form.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            GameForm form = new GameForm("GTA V");
+            form.Show();
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
 
         }
