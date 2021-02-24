@@ -31,3 +31,14 @@ C:\Users\beavi\Desktop\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.GenerateResour
 C:\Users\beavi\Desktop\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.CoreCompileInputs.cache
 C:\Users\beavi\Desktop\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
 C:\Users\beavi\Desktop\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe.config
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.pdb
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csprojAssemblyReference.cache
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Form1.resources
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.GameForm.resources
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Properties.Resources.resources
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.GenerateResource.cache
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
+C:\Users\user\Desktop\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb

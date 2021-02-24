@@ -13,6 +13,7 @@ namespace FormsAppEvoX
     public struct Game
     {
         public PictureBox picture;
+        public Label label;
         public string name;
         public string genre;
         public int price;
@@ -20,6 +21,7 @@ namespace FormsAppEvoX
         public Game(string name1, int price1, string genre1)
         {
             picture = new PictureBox();
+            label = new Label();
             name = name1;
             price = price1;
             genre = genre1;
@@ -34,7 +36,6 @@ namespace FormsAppEvoX
             InitializeComponent();
 
             games[0] = new Game("L.A. Noire", 2000, "Приключения");
-            games[0].picture = pictureBox9;
 
             games[0] = new Game("CALL of DUTY", 2000, "Приключения");
           //  games[0].picture = pictureBox9;
@@ -55,10 +56,10 @@ namespace FormsAppEvoX
          //   games[4].picture = pictureBox6;
 
 
-            games[5] = new Game("Mirror's Edge", 1000, "");
+            games[5] = new Game("Mirrors Edge", 1000, "");
           //  games[5].picture = pictureBox10;
 
-            games[6] = new Game("CALL of DUTY WTR", 900, "Приключения");
+            games[6] = new Game("CALL of DUTY", 900, "Приключения");
           //  games[6].picture = pictureBox5;
 
             games[7] = new Game("GTA V", 900, "Приключения");
@@ -74,7 +75,7 @@ namespace FormsAppEvoX
             {
                 PictureBox pb1 = new PictureBox(); 
                 pb1.Location = new Point(x, y);
-                pb1.Size = new Size(80, 100);
+                pb1.Size = new Size(150, 200);
                 pb1.SizeMode = PictureBoxSizeMode.Zoom;
                 try
                 {
@@ -88,7 +89,7 @@ namespace FormsAppEvoX
                     }
                     catch (Exception) { }
                 }
-                games[i].picture = pb1; Маркет плэйс
+                games[i].picture = pb1; 
                 games[i].picture.Tag = games[i].name;
                 games[i].picture.Click += new EventHandler(OpenGame);
                 Controls.Add(pb1);
@@ -96,21 +97,19 @@ namespace FormsAppEvoX
                 Label Lb1 = new Label();
                 Lb1.AutoSize = true;
                 Lb1.BackColor = Color.Transparent;
-                Lb1.ForeColor = Color.Red;
+                Lb1.ForeColor = Color.Brown;
                 Lb1.Font = new Font("Microsoft Sans Serif", 15F);
-                Lb1.Location = new Point(x + 10, y + 80);
-                Lb1.Size = new Size(10, 80);
-                Lb1.TabIndex = 31;
-                Lb1.Text = [i].name;
-                Маркет плэйс[i].
-                label = Lb1;
+                Lb1.Location = new Point(x + 10, y + 200);
+                Lb1.Size = new Size(150, 20);
+                Lb1.Text = games[i].name;
+                games[i].label = Lb1;
                 Controls.Add(Lb1);
 
-                x = x + 100;
-                if (x + 100 > Width)
+                x = x + 160;
+                if (x + 160 > Width)
                 {
-                    x = 10;
-                    y = y + 120;
+                    x = 15;
+                    y = y + 225;
                 }
 
             }
