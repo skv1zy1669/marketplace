@@ -18,6 +18,19 @@ namespace FormsAppEvoX
             InitializeComponent();
 
             label1.Text = game;
+            try
+            {
+                GamePicture.Load("../../Маркет плэйс/" + game + ".png");
+            }
+            catch (Exception)
+            {
+                try
+                {
+                    GamePicture.Load("../../Маркет плэйс/" + game + ".jpg");
+                }
+                catch (Exception) { }
+            }
+
 
             if (game == "GTA V")
             {
@@ -25,7 +38,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar North";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
                 label2.Text = "Дата выхода 14 апр. 2015";
-                GamePicture.Load("../../Маркет плэйс/GTA V.jpg");
             }
 
             if (game == "Destiny")
@@ -34,7 +46,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "Разработчик: Bungel";
                 labelPromoter.Text = "Издатель: Activision";
                 label2.Text = "Дата выхода: 10 ноя. 2020";
-                GamePicture.Load("../../Маркет плэйс/GTA V.jpg");
             }
 
             if (game == "CS GO")
@@ -43,7 +54,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "ДАТА ВЫХОДА: 21 авг. 2012";
                 labelPromoter.Text = "РАЗРАБОТЧИК:Valve, Hidden Path Entertainment";
                 label2.Text = "ИЗДАТЕЛЬ:Valve";
-                GamePicture.Load("../../Маркет плэйс/CS GO.jpg");
             }
             if (game == "Mortal Kombat")
             {
@@ -51,7 +61,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "РАЗРАБОТЧИК:  NetherRealm Studios, QLOC, Shiver";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  Warner Bros Interactive Entertainment";
                 label2.Text = "Дата выхода 23 апр. 2019";
-                GamePicture.Load("../../Маркет плэйс/Mortal Kombat.jpg");
             }
             if (game == "Forza")
             {
@@ -59,17 +68,13 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "РАЗРАБОТЧИК:  Playground Games, Turn 10 Studios";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  Playground Games, Turn 10 Studios";
                 label2.Text = "Дата выхода 2018 г.";
-                GamePicture.Load("../../Маркет плэйс/Forza.jpg");
             }
-            if (game == "Mirror's Edge")
+            if (game == "Mirrors Edge")
             {
                 labelPrice.Text = "999 руб.";
                 labelDeveloper.Text = "РАЗРАБОТЧИК: EA DICE";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: EA DICE";
-                label2.Text = "Дата выхода 2008 г.";
-                GamePicture.Load("../../Маркет плэйс/Mirros edge.jpg");
-
-                
+                label2.Text = "Дата выхода 2008 г.";                
             }
 
             if (game == "WITCHER")
@@ -78,8 +83,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2018 г.";
-                GamePicture.Load("../../Маркет плэйс/WITCHER.jpg");
-
             }
 
 
@@ -89,7 +92,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2008 г.";
-                GamePicture.Load("../../Маркет плэйс/CALL of DUTY WTR.jpg");
             }
 
             if (game == "CALL of DUTY")
@@ -98,7 +100,6 @@ namespace FormsAppEvoX
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2018 г.";
-                GamePicture.Load("../../Маркет плэйс/CALL of DUTY.jpg");
             }
             if (game == "L.A Noire")
                 {
@@ -106,9 +107,6 @@ namespace FormsAppEvoX
                     labelDeveloper.Text = "РАЗРАБОТЧИК; Team Bondi";
                     labelPromoter.Text = "ИЗДАТЕЛЬ:  Rockstar games";
                     label2.Text = "Дата выхода 8 ноя.2011 г.";
-                    GamePicture.Load("../../Маркет плэйс/L.A.NOIRE.jpg");
-
-
                 }
 
         }
