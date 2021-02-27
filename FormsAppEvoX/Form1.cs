@@ -31,9 +31,12 @@ namespace FormsAppEvoX
     public partial class Form1 : Form
     {
         public Game[] games = new Game[600];
+        public List<Game> games_list = new List<Game>();
         public Form1()
         {
             InitializeComponent();
+
+            games_list.Add(new Game("L.A. Noire", 2000, "Приключения"));
 
             games[0] = new Game("L.A. Noire", 2000, "Приключения");
 
