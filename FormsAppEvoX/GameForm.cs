@@ -12,26 +12,9 @@ namespace FormsAppEvoX
 {
     public partial class GameForm : Form
     {
-        public Person[] people = new Person[800];
-        public List<Person> people_list = new List<Person>();
         public GameForm(string game)
         {
             InitializeComponent();
-            geme_list.Add(new Person("GTA V") )
-            game[2] = new Person ("Destiny")
-            game[3] = new Person("CS GO")
-            game[4] = new Person("Mortal Kombat")
-            game[5] = new Person("Forza")
-            game[6] = new Person("Mirrors Edge")
-            game[7] = new Person("WITCHER")
-            game[8] = new Person("CALL of DUTY WTR")
-            game[9] = new Person("CALL of DUTY)
-
-
-
-
-
-
 
             label1.Text = game;
             try
