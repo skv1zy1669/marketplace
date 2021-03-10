@@ -43,25 +43,25 @@ namespace FormsAppEvoX
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GamePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
             this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPrice.Location = new System.Drawing.Point(910, 673);
+            this.labelPrice.Location = new System.Drawing.Point(900, 672);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(125, 32);
             this.labelPrice.TabIndex = 14;
             this.labelPrice.Text = "5591руб";
             this.labelPrice.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelPrice.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -122,7 +122,6 @@ namespace FormsAppEvoX
             this.label1.Size = new System.Drawing.Size(230, 69);
             this.label1.TabIndex = 5;
             this.label1.Text = "Destiny";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelDeveloper
             // 
@@ -133,7 +132,6 @@ namespace FormsAppEvoX
             this.labelDeveloper.Size = new System.Drawing.Size(251, 29);
             this.labelDeveloper.TabIndex = 5;
             this.labelDeveloper.Text = "Разработчик: Bungel";
-            this.labelDeveloper.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelPromoter
             // 
@@ -154,7 +152,6 @@ namespace FormsAppEvoX
             this.label3.Size = new System.Drawing.Size(519, 29);
             this.label3.TabIndex = 12;
             this.label3.Text = "Платформы: PS3 / PS4 / Xbox 360 / Xbox One";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label6
             // 
@@ -184,16 +181,17 @@ namespace FormsAppEvoX
             this.label2.Size = new System.Drawing.Size(306, 29);
             this.label2.TabIndex = 17;
             this.label2.Text = "Дата выхода: 10 ноя. 2020";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // pictureBox5
             // 
-            this.textBox1.Location = new System.Drawing.Point(434, 54);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(706, 22);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(1054, 605);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(133, 99);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 18;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // GameForm
             // 
@@ -201,7 +199,7 @@ namespace FormsAppEvoX
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1375, 840);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
@@ -218,12 +216,12 @@ namespace FormsAppEvoX
             this.Name = "GameForm";
             this.Text = "    ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GamePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,6 +242,6 @@ namespace FormsAppEvoX
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelPrice;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

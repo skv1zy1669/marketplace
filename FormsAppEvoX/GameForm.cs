@@ -12,8 +12,14 @@ namespace FormsAppEvoX
 {
     public partial class GameForm : Form
     {
+        /// <summary>
+        /// Выбранная игра
+        /// </summary>
+        Game game1;
+
         public GameForm(string game)
         {
+            //Form1.games_list;
             InitializeComponent();
 
             label1.Text = game;
@@ -31,10 +37,25 @@ namespace FormsAppEvoX
             }
 
 
+            for (int i = 0; i < Form1.games_list.Count; i++)
+            {
+                if (Form1.games_list[i].name == game)
+                {
+                    game1 = Form1.games_list[i];
+                    labelPrice.Text = game1.price.ToString() + " руб.";
+                }
+            }
+
+
+
+
+
+
+
 
             if (game == "GTA V")
             {
-                labelPrice.Text = "1498.50 руб.";
+                //labelPrice.Text = "1499 руб.";
                 labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar North";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
                 label2.Text = "Дата выхода 14 апр. 2015";
@@ -42,7 +63,7 @@ namespace FormsAppEvoX
 
             if (game == "Destiny")
             {
-                labelPrice.Text = "5591 руб.";
+                // labelPrice.Text = "5591 руб.";
                 labelDeveloper.Text = "Разработчик: Bungel";
                 labelPromoter.Text = "Издатель: Activision";
                 label2.Text = "Дата выхода: 10 ноя. 2020";
@@ -50,35 +71,35 @@ namespace FormsAppEvoX
 
             if (game == "CS GO")
             {
-                labelPrice.Text = "Бесплатно";
+                //  labelPrice.Text = "Бесплатно";
                 labelDeveloper.Text = "ДАТА ВЫХОДА: 21 авг. 2012";
                 labelPromoter.Text = "РАЗРАБОТЧИК:Valve, Hidden Path Entertainment";
                 label2.Text = "ИЗДАТЕЛЬ:Valve";
             }
             if (game == "Mortal Kombat")
             {
-                labelPrice.Text = "690 руб.";
+                //   labelPrice.Text = "690 руб.";
                 labelDeveloper.Text = "РАЗРАБОТЧИК:  NetherRealm Studios, QLOC, Shiver";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  Warner Bros Interactive Entertainment";
                 label2.Text = "Дата выхода 23 апр. 2019";
             }
             if (game == "Forza")
             {
-                labelPrice.Text = "800 руб";
+                //   labelPrice.Text = "800 руб";
                 labelDeveloper.Text = "РАЗРАБОТЧИК:  Playground Games, Turn 10 Studios";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  Playground Games, Turn 10 Studios";
                 label2.Text = "Дата выхода 2018 г.";
             }
             if (game == "Mirrors Edge")
             {
-                labelPrice.Text = "999 руб.";
+                //  labelPrice.Text = "999 руб.";
                 labelDeveloper.Text = "РАЗРАБОТЧИК: EA DICE";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: EA DICE";
-                label2.Text = "Дата выхода 2008 г.";                
+                label2.Text = "Дата выхода 2008 г.";
             }
 
             if (game == "WITCHER")
-            { 
+            {
                 labelPrice.Text = "1354 руб";
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
@@ -102,55 +123,19 @@ namespace FormsAppEvoX
                 label2.Text = "Дата выхода 2018 г.";
             }
             if (game == "L.A Noire")
-                {
-                    labelPrice.Text = "699 руб";
-                    labelDeveloper.Text = "РАЗРАБОТЧИК; Team Bondi";
-                    labelPromoter.Text = "ИЗДАТЕЛЬ:  Rockstar games";
-                    label2.Text = "Дата выхода 8 ноя.2011 г.";
-                }
+            {
+                labelPrice.Text = "699 руб";
+                labelDeveloper.Text = "РАЗРАБОТЧИК; Team Bondi";
+                labelPromoter.Text = "ИЗДАТЕЛЬ:  Rockstar games";
+                label2.Text = "Дата выхода 8 ноя.2011 г.";
+            }
 
         }
 
-
-
-
-
-
-
-
-
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            if (Form1.korzina.Contains(game1)) 
+                Form1.korzina.Add(game1);
 
         }
     }

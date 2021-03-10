@@ -30,91 +30,75 @@ namespace FormsAppEvoX
 
     public partial class Form1 : Form
     {
-        public Game[] games = new Game[600];
-        public List<Game> games_list = new List<Game>();
+        /// <summary>
+        /// Все игры
+        /// </summary>
+        public static List<Game> games_list = new List<Game>();
+        /// <summary>
+        /// корзины
+        /// </summary>
+        public static List<Game> korzina = new List<Game>();
+
         public Form1()
         {
             InitializeComponent();
 
-            games_list.Add(new Game("L.A. Noire", 2000, "Приключения"));
-
-            games[0] = new Game("L.A. Noire", 2000, "Приключения");
-
-            games[0] = new Game("CALL of DUTY", 2000, "Приключения");
-          //  games[0].picture = pictureBox9;
-
-            games[1] = new Game("CS GO", 0, "");
-         //   games[1].picture = pictureBox1;
-
-
-            games[2] = new Game("Mortal Kombat", 700, "");
-           // games[2].picture = pictureBox8;
-
-
-            games[3] = new Game("Forza", 800, "");
-           // games[3].picture = pictureBox2;
-
-
-            games[4] = new Game("WITCHER", 1500, "");
-         //   games[4].picture = pictureBox6;
-
-
-            games[5] = new Game("Mirrors Edge", 1000, "");
-          //  games[5].picture = pictureBox10;
-
-            games[6] = new Game("CALL of DUTY", 900, "Приключения");
-          //  games[6].picture = pictureBox5;
-
-            games[7] = new Game("GTA V", 900, "Приключения");
-          //  games[7].picture = pictureBox3;
-
-            games[8] = new Game("Destiny", 5600, "Приключения");
-           // games[8].picture = pictureBox4;
+            games_list.Add(new Game("L.A.Noire", 2000, "Приключения"));
+            games_list.Add(new Game("CALL of DUTY", 2000, "Приключения"));
+            games_list.Add(new Game("CS GO", 0, ""));
+            games_list.Add(new Game("Mortal Kombat", 700, ""));
+            games_list.Add(new Game("Forza", 800, ""));
+            games_list.Add(new Game("WITCHER", 1500, ""));
+            games_list.Add(new Game("Mirrors Edge", 1000, ""));
+            games_list.Add(new Game("CALL of DUTY WTR", 900, "Приключения"));
+            games_list.Add(new Game("GTA V", 1499, "Приключения"));
+            games_list.Add(new Game("Destiny", 5600, "Приключения"));
 
 
             int x = 10;
             int y = 80;
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < games_list.Count; i++)
             {
-                PictureBox pb1 = new PictureBox(); 
-                pb1.Location = new Point(x, y);
-                pb1.Size = new Size(150, 200);
-                pb1.SizeMode = PictureBoxSizeMode.Zoom;
+                # region Формируем картинку
+                games_list[i].picture.Location = new Point(x, y);
+                games_list[i].picture.Size = new Size(150, 200);
+                games_list[i].picture.SizeMode = PictureBoxSizeMode.StretchImage;
                 try
                 {
-                    pb1.Load("../../Маркет плэйс/" + games[i].name + ".png");
+                    games_list[i].picture.Load("../../Маркет плэйс/" + games_list[i].name + ".png");
                 }
                 catch (Exception)
                 {
                     try
                     {
-                        pb1.Load("../../Маркет плэйс/" + games[i].name + ".jpg");
+                        games_list[i].picture.Load("../../Маркет плэйс/" + games_list[i].name + ".jpg");
                     }
                     catch (Exception) { }
                 }
-                games[i].picture = pb1; 
-                games[i].picture.Tag = games[i].name;
-                games[i].picture.Click += new EventHandler(OpenGame);
-                Controls.Add(pb1);
 
-                Label Lb1 = new Label();
-                Lb1.AutoSize = true;
-                Lb1.BackColor = Color.Transparent;
-                Lb1.ForeColor = Color.Brown;
-                Lb1.Font = new Font("Microsoft Sans Serif", 15F);
-                Lb1.Location = new Point(x + 10, y + 200);
-                Lb1.Size = new Size(150, 20);
-                Lb1.Text = games[i].name;
-                games[i].label = Lb1;
-                Controls.Add(Lb1);
+                games_list[i].picture.Tag = games_list[i].name;
+                games_list[i].picture.Click += new EventHandler(OpenGame);
+                Controls.Add(games_list[i].picture);
+                #endregion
 
+                #region Подпись к картинке
+                games_list[i].label.AutoSize = true;
+                games_list[i].label.BackColor = Color.Transparent;
+                games_list[i].label.ForeColor = Color.Brown;
+                games_list[i].label.Font = new Font("Microsoft Sans Serif", 15);
+                games_list[i].label.Location = new Point(x + 10, y + 200);
+                games_list[i].label.Size = new Size(150, 20);
+                games_list[i].label.Text = games_list[i].name;
+                Controls.Add(games_list[i].label);
+                #endregion
+
+                //Координаты
                 x = x + 160;
                 if (x + 160 > Width)
                 {
                     x = 15;
                     y = y + 225;
                 }
-
             }
         }
         private void OpenGame(object sender, EventArgs e)
@@ -140,21 +124,23 @@ namespace FormsAppEvoX
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < games_list.Count; i++)
             {
-                games[i].picture.Visible = true;
+                games_list[i].picture.Visible = true;
+                games_list[i].label.Visible = true;
 
                 if (textBox1.Text != "" &&
-                    games[i].name != textBox1.Text)
+                    games_list[i].name != textBox1.Text)
                 {
-                    games[i].picture.Visible = false;
+                    games_list[i].picture.Visible = false;
+                    games_list[i].label.Visible = false;
                 }
 
                 if (cenaTB.Text != "" &&
-                   games[i].price > Convert.ToInt32(cenaTB.Text))
+                   games_list[i].price > Convert.ToInt32(cenaTB.Text))
                 {
-                   games[i].picture.Visible = false;
-                
+                    games_list[i].picture.Visible = false;
+                    games_list[i].label.Visible = false;
                 }
             }
         }
