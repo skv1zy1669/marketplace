@@ -33,6 +33,7 @@ namespace FormsAppEvoX
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cenaTB = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.Корзина = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -72,19 +73,32 @@ namespace FormsAppEvoX
             this.label11.Text = "Цена";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
+            // Корзина
+            // 
+            this.Корзина.Location = new System.Drawing.Point(917, 22);
+            this.Корзина.Name = "Корзина";
+            this.Корзина.Size = new System.Drawing.Size(94, 56);
+            this.Корзина.TabIndex = 23;
+            this.Корзина.Text = "Корзина";
+            this.Корзина.UseVisualStyleBackColor = true;
+            this.Корзина.Click += new System.EventHandler(this.Корзина_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(931, 478);
+            this.ClientSize = new System.Drawing.Size(1013, 478);
+            this.Controls.Add(this.Корзина);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.cenaTB);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
-            this.Text = "ttt";
+            this.Text = "Главная страница";
+            this.TransparencyKey = System.Drawing.SystemColors.ActiveBorder;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -97,6 +111,7 @@ namespace FormsAppEvoX
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox cenaTB;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button Корзина;
     }
 }
 

@@ -134,8 +134,12 @@ namespace FormsAppEvoX
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            if (Form1.korzina.Contains(game1)) 
+            if (!Form1.korzina.Contains(game1)) 
                 Form1.korzina.Add(game1);
+        }
+
+        private void GameForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

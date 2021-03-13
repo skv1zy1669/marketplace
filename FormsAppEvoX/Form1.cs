@@ -101,7 +101,7 @@ namespace FormsAppEvoX
                 }
             }
         }
-        private void OpenGame(object sender, EventArgs e)
+        public static void OpenGame(object sender, EventArgs e)
         {
             PictureBox pb = (PictureBox)sender;
             GameForm form = new GameForm(pb.Tag.ToString());
@@ -148,6 +148,12 @@ namespace FormsAppEvoX
         private void label11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Корзина_Click(object sender, EventArgs e)
+        {
+            KorzinaForm form = new KorzinaForm();
+            form.Show();
         }
     }
 }

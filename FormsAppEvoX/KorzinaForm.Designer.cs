@@ -37,7 +37,7 @@ namespace FormsAppEvoX
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1324, 555);
             this.Name = "KorzinaForm";
-            this.Text = "Form3";
+            this.Text = "Корзина";
             this.Load += new System.EventHandler(this.KorzinaForm_Load);
             this.ResumeLayout(false);
 
