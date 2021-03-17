@@ -27,6 +27,17 @@ namespace FormsAppEvoX
                 picture.Location = new Point(x, y);
                 picture.Size = new Size(150, 200);
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                {     //Координаты
+                    x = x + 160;
+                    if (x + 160 > Width)
+                    {
+                        x = 15;
+                        y = y + 225;
+                    }
+                }   
+
+
                 try
                 {
                     picture.Load("../../Маркет плэйс/" + game1.name + ".png");
@@ -39,6 +50,8 @@ namespace FormsAppEvoX
                     }
                     catch (Exception) { }
                 }
+
+                
 
                 picture.Tag = game1.name;
                 picture.Click += new EventHandler(Form1.OpenGame);

@@ -54,7 +54,6 @@ namespace FormsAppEvoX
             games_list.Add(new Game("GTA V", 1499, "Приключения"));
             games_list.Add(new Game("Destiny", 5600, "Приключения"));
 
-
             int x = 10;
             int y = 80;
             for (int i = 0; i < games_list.Count; i++)
@@ -122,8 +121,10 @@ namespace FormsAppEvoX
 
         
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void SearchClick(object sender, EventArgs e)
         {
+            int x = 10;
+            int y = 80;
             for (int i = 0; i < games_list.Count; i++)
             {
                 games_list[i].picture.Visible = true;
@@ -141,6 +142,20 @@ namespace FormsAppEvoX
                 {
                     games_list[i].picture.Visible = false;
                     games_list[i].label.Visible = false;
+
+                    if (games_list[i].picture.Visible)
+                    {
+                        games_list[i].picture.Location = new Point(x, y);
+                        games_list[i].label.Location = new Point(x + 10, y + 200);
+                        //Координаты
+                        x = x + 160;
+                        if (x + 160 > Width)
+                        {
+                            x = 15;
+                            y = y + 225;
+                        }
+
+                    }
                 }
             }
         }
