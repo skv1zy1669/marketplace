@@ -77,7 +77,7 @@ namespace FormsAppEvoX
 
                 games_list[i].picture.Tag = games_list[i].name;
                 games_list[i].picture.Click += new EventHandler(OpenGame);
-                Controls.Add(games_list[i].picture);
+                panel2.Controls.Add(games_list[i].picture);
                 #endregion
 
                 #region Подпись к картинке
@@ -88,7 +88,7 @@ namespace FormsAppEvoX
                 games_list[i].label.Location = new Point(x + 10, y + 200);
                 games_list[i].label.Size = new Size(150, 20);
                 games_list[i].label.Text = games_list[i].name;
-                Controls.Add(games_list[i].label);
+                panel2.Controls.Add(games_list[i].label);
                 #endregion
 
                 //Координаты
@@ -137,24 +137,25 @@ namespace FormsAppEvoX
                     games_list[i].label.Visible = false;
                 }
 
+                //Скрываем игры с неподходящей ценой
                 if (cenaTB.Text != "" &&
                    games_list[i].price > Convert.ToInt32(cenaTB.Text))
                 {
                     games_list[i].picture.Visible = false;
                     games_list[i].label.Visible = false;
+                }
 
-                    if (games_list[i].picture.Visible)
+                //Меняем координаты у видимых игр
+                if (games_list[i].picture.Visible)
+                {
+                    games_list[i].picture.Location = new Point(x, y);
+                    games_list[i].label.Location = new Point(x + 10, y + 200);
+                    //Координаты
+                    x = x + 160;
+                    if (x + 160 > Width)
                     {
-                        games_list[i].picture.Location = new Point(x, y);
-                        games_list[i].label.Location = new Point(x + 10, y + 200);
-                        //Координаты
-                        x = x + 160;
-                        if (x + 160 > Width)
-                        {
-                            x = 15;
-                            y = y + 225;
-                        }
-
+                        x = 15;
+                        y = y + 225;
                     }
                 }
             }

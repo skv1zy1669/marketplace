@@ -142,5 +142,15 @@ namespace FormsAppEvoX
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("");
+        }
     }
 }
