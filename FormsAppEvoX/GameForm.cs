@@ -100,7 +100,7 @@ namespace FormsAppEvoX
 
             if (game == "WITCHER")
             {
-                labelPrice.Text = "1354 руб";
+                //labelPrice.Text = "1354 руб";
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2018 г.";
@@ -109,7 +109,7 @@ namespace FormsAppEvoX
 
             if (game == "CALL of DUTY WTR")
             {
-                labelPrice.Text = "899 руб";
+                //labelPrice.Text = "899 руб";
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2008 г.";
@@ -117,14 +117,14 @@ namespace FormsAppEvoX
 
             if (game == "CALL of DUTY")
             {
-                labelPrice.Text = "1999 руб";
+               // labelPrice.Text = "1999 руб";
                 labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2018 г.";
             }
             if (game == "L.A Noire")
             {
-                labelPrice.Text = "699 руб";
+             //   labelPrice.Text = "699 руб";
                 labelDeveloper.Text = "РАЗРАБОТЧИК; Team Bondi";
                 labelPromoter.Text = "ИЗДАТЕЛЬ:  Rockstar games";
                 label2.Text = "Дата выхода 8 ноя.2011 г.";
@@ -150,7 +150,48 @@ namespace FormsAppEvoX
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("");
+            
+
+
+            if (game1.name == "L.A.Noire")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "GTA V")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "Destiny")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "WITCHER")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "CALL of DUTY")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "CALL of DUTY WTR")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "Mirrors Edge")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
+
+            if (game1.name == "Forza")
+            {
+                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+            }
         }
     }
 }
