@@ -47,11 +47,21 @@ namespace FormsAppEvoX
             }
 
 
+            if (game == "Red Dead Redemption 2")
+            {
+                //labelPrice.Text = "2499 руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+                label2.Text = "Дата выхода 5 Дек. 2019";
+            }
 
-
-
-
-
+            if (game == "Rust")
+            {
+                //labelPrice.Text = "725 руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Facepunch Studios";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Facepunch Studios";
+                label2.Text = "Дата выходa 8 фев. 2018";
+            }
 
             if (game == "GTA V")
             {
@@ -150,9 +160,13 @@ namespace FormsAppEvoX
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            
 
 
+            if (game1.name == "CS GO")
+            {
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/");
+            }
+   
             if (game1.name == "L.A.Noire")
             {
                 System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
@@ -160,37 +174,37 @@ namespace FormsAppEvoX
 
             if (game1.name == "GTA V")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/");
             }
 
             if (game1.name == "Destiny")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/1085660/Destiny_2/");
             }
 
             if (game1.name == "WITCHER")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/292030/_3/");
             }
 
             if (game1.name == "CALL of DUTY")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/10180/Call_of_Duty_Modern_Warfare_2/");
             }
 
             if (game1.name == "CALL of DUTY WTR")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/10090/Call_of_Duty_World_at_War/");
             }
 
             if (game1.name == "Mirrors Edge")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/1233570/Mirrors_Edge_Catalyst/");
             }
 
             if (game1.name == "Forza")
             {
-                System.Diagnostics.Process.Start("http://store.steampowered.com/app/110800/LA_Noire/");
+                System.Diagnostics.Process.Start("https://store.steampowered.com/app/1293830/Forza_Horizon_4/");
             }
         }
     }

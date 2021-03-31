@@ -43,6 +43,9 @@ namespace FormsAppEvoX
         {
             InitializeComponent();
 
+
+            games_list.Add(new Game("R.D.R", 2499, "Выживание"));
+            games_list.Add(new Game("Rust", 725, "Приключения"));
             games_list.Add(new Game("L.A.Noire", 2000, "Приключения"));
             games_list.Add(new Game("CALL of DUTY", 2000, "Приключения"));
             games_list.Add(new Game("CS GO", 0, ""));
@@ -54,7 +57,7 @@ namespace FormsAppEvoX
             games_list.Add(new Game("GTA V", 1499, "Приключения"));
             games_list.Add(new Game("Destiny", 5600, "Приключения"));
 
-            int x = 10;
+            int x = 1;
             int y = 80;
             for (int i = 0; i < games_list.Count; i++)
             {
