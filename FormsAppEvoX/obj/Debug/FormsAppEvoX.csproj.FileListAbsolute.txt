@@ -10,3 +10,4 @@ D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.CoreCompileInputs.cache
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb
+D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Form3.resources
