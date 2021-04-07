@@ -47,6 +47,47 @@ namespace FormsAppEvoX
             }
 
 
+            if (game ==  "Dirt 2.0")
+            {
+                //labelPrice.Text = "2499 руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+                label2.Text = "Дата выхода 5 Дек. 2019";
+            }
+
+            if (game == "Red Dead Redemption 2")
+            {
+                //labelPrice.Text = "2499 руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+                label2.Text = "Дата выхода 5 Дек. 2019";
+            }
+
+            if (game == "Red Dead Redemption 2")
+            {
+                //labelPrice.Text = "2499 руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+                label2.Text = "Дата выхода 5 Дек. 2019";
+            }
+
+            if (game == "Red Dead Redemption 2")
+            {
+                //labelPrice.Text = "2499 руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+                label2.Text = "Дата выхода 5 Дек. 2019";
+            }
+
+
+
+
+
+
+
+
+
+
             if (game == "Red Dead Redemption 2")
             {
                 //labelPrice.Text = "2499 руб.";

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,16 +30,6 @@ namespace FormsAppEvoX
     }
 
     
-         
- 
-         
-
-
-
-
-
-
-    
     public partial class Form1 : Form
     {
         /// <summary>
@@ -55,18 +46,13 @@ namespace FormsAppEvoX
             InitializeComponent();
 
 
-            games_list.Add(new Game("R.D.R", 2499, "Выживание"));
-            games_list.Add(new Game("Rust", 725, "Приключения"));
-            games_list.Add(new Game("L.A.Noire", 2000, "Приключения"));
-            games_list.Add(new Game("CALL of DUTY", 2000, "Приключения"));
-            games_list.Add(new Game("CS GO", 0, ""));
-            games_list.Add(new Game("Mortal Kombat", 700, ""));
-            games_list.Add(new Game("Forza", 800, ""));
-            games_list.Add(new Game("WITCHER", 1500, ""));
-            games_list.Add(new Game("Mirrors Edge", 1000, ""));
-            games_list.Add(new Game("CALL of DUTY WTR", 900, "Приключения"));
-            games_list.Add(new Game("GTA V", 1499, "Приключения"));
-            games_list.Add(new Game("Destiny", 5600, "Приключения"));
+            string[] lines = File.ReadAllLines("../../../Маркет плэйс.txt");
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
+                games_list.Add(new Game(parts[0], Convert.ToInt32(parts[1]), parts[2]));
+            }
+
 
             int x = 1;
             int y = 80;

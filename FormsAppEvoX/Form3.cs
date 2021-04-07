@@ -20,13 +20,13 @@ namespace FormsAppEvoX
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            /*
            File.AppendAllText("CharactersFiles.txt", Environment.NewLine + textBox1.Text + "; " + Filtergames);   
-            textBox1.test + "; игры; 10");
+            textBox1.text + "; игры; 10");
 
            File.Create("../../Files/Игры/" + TextBox1.Text + ".txt");
            MessageBox.Show("Получилось");
-
+            */
 
         }
 
