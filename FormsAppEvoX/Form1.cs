@@ -18,14 +18,15 @@ namespace FormsAppEvoX
         public string name;
         public string genre;
         public int price;
-
-        public Game(string name1, int price1, string genre1)
+        public int rating;
+        public Game(string name1, int price1, string genre1, int rating1)
         {
             picture = new PictureBox();
             label = new Label();
             name = name1;
             price = price1;
             genre = genre1;
+            rating = rating1;
         }
     }
 
@@ -50,7 +51,11 @@ namespace FormsAppEvoX
             foreach (string line in lines)
             {
                 string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
-                games_list.Add(new Game(parts[0], Convert.ToInt32(parts[1]), parts[2]));
+                games_list.Add(
+                    new Game(parts[0],          //Название
+                    Convert.ToInt32(parts[1]),  //Цена
+                    parts[2], 
+                    Convert.ToInt32(parts[3])));//Рейтинг
             }
 
 
@@ -169,6 +174,12 @@ namespace FormsAppEvoX
         private void Корзина_Click(object sender, EventArgs e)
         {
             KorzinaForm form = new KorzinaForm();
+            form.Show();
+        }
+
+        private void AddGameButton_Click(object sender, EventArgs e)
+        {
+            AddGame form = new AddGame();
             form.Show();
         }
     }

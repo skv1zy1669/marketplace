@@ -1,12 +1,12 @@
-R.D.R, 2499, Выживание
-Rust, 725, Приключения
-L.A.Noire, 2000, Приключения
-CALL of DUTY, 2000, Приключения
-CS GO, 0, 
-Mortal Kombat, 700, 
-Forza, 800, 
-WITCHER, 1500, 
-Mirrors Edge, 1000, 
-CALL of DUTY WTR, 900, Приключения
-GTA V, 1499, Приключения
-Destiny, 5600, Приключения
+R.D.R, 2499, Выживание, 5
+Rust, 725, Приключения, 4
+L.A.Noire, 2000, Приключения, 3
+CALL of DUTY, 2000, Приключения, 5
+CS GO, 0, Шутер, 5 
+Mortal Kombat, 700, Фентази, 5
+Forza, 800, Гонки, 4
+WITCHER, 1500, Рпг, 5
+Mirrors Edge, 1000, action-adventure, 5 
+CALL of DUTY WTR, 900, Приключения, 4
+GTA V, 1499, Приключения, 4
+Destiny, 5600, Приключения, 5

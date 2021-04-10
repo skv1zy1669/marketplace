@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace FormsAppEvoX
 {
-    public partial class Form3 : Form
+    public partial class AddGame : Form
     {
-        public Form3()
+        public AddGame()
         {
             InitializeComponent();
         }
@@ -30,8 +30,9 @@ namespace FormsAppEvoX
 
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
-
+        }
     }
 }

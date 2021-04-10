@@ -1,7 +1,7 @@
 ﻿
 namespace FormsAppEvoX
 {
-    partial class Form3
+    partial class AddGame
     {
         /// <summary>
         /// Required designer variable.
@@ -69,6 +69,7 @@ namespace FormsAppEvoX
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 24);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -97,7 +98,7 @@ namespace FormsAppEvoX
             this.label3.TabIndex = 6;
             this.label3.Text = "Цена";
             // 
-            // Form3
+            // AddGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,8 +110,8 @@ namespace FormsAppEvoX
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "AddGame";
+            this.Text = "Добавить игру";
             this.ResumeLayout(false);
             this.PerformLayout();
 

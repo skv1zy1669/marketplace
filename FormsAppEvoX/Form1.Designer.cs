@@ -37,6 +37,7 @@ namespace FormsAppEvoX
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.AddGameButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +100,7 @@ namespace FormsAppEvoX
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.AddGameButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.searchButton);
             this.panel1.Controls.Add(this.Корзина);
@@ -119,6 +121,17 @@ namespace FormsAppEvoX
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1023, 378);
             this.panel2.TabIndex = 26;
+            // 
+            // AddGameButton
+            // 
+            this.AddGameButton.Location = new System.Drawing.Point(864, 9);
+            this.AddGameButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddGameButton.Name = "AddGameButton";
+            this.AddGameButton.Size = new System.Drawing.Size(117, 56);
+            this.AddGameButton.TabIndex = 20;
+            this.AddGameButton.Text = "Добавить игру";
+            this.AddGameButton.UseVisualStyleBackColor = true;
+            this.AddGameButton.Click += new System.EventHandler(this.AddGameButton_Click);
             // 
             // Form1
             // 
@@ -151,6 +164,7 @@ namespace FormsAppEvoX
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button AddGameButton;
     }
 }
 

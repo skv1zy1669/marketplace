@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,12 @@ namespace FormsAppEvoX
             label1.Text = game;
             try
             {
+                label6.Text = File.ReadAllText("../../Маркет плэйс/" + game + ".txt");
+            }
+            catch (Exception) { }
+
+            try
+            {               
                 GamePicture.Load("../../Маркет плэйс/" + game + ".png");
             }
             catch (Exception)
@@ -46,37 +53,48 @@ namespace FormsAppEvoX
                 }
             }
 
+            //Рейтинг
+            for (int i = 0; i < game1.rating; i++)
+            {
+                PictureBox picture = new PictureBox();
+                picture.Location = new Point(460 + 40 * i, 65);
+                picture.Size = new Size(40, 40);
+                picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                picture.Load("../../Маркет плэйс/звездочка.jpeg");
+                Controls.Add(picture);
+            }
+
 
             if (game ==  "Dirt 2.0")
             {
-                //labelPrice.Text = "2499 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
-                label2.Text = "Дата выхода 5 Дек. 2019";
+                //labelPrice.Text = " руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: Codemasters";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: Codemasters";
+                label2.Text = "Дата выхода: 2019";
             }
 
-            if (game == "Red Dead Redemption 2")
+            if (game == "")
             {
-                //labelPrice.Text = "2499 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
-                label2.Text = "Дата выхода 5 Дек. 2019";
+                //labelPrice.Text = "руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: ";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: ";
+                label2.Text = "Дата выхода ";
             }
 
-            if (game == "Red Dead Redemption 2")
+            if (game == "")
             {
-                //labelPrice.Text = "2499 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
-                label2.Text = "Дата выхода 5 Дек. 2019";
+                //labelPrice.Text = " руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: ";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: ";
+                label2.Text = "Дата выхода ";
             }
 
-            if (game == "Red Dead Redemption 2")
+            if (game == "")
             {
-                //labelPrice.Text = "2499 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
-                label2.Text = "Дата выхода 5 Дек. 2019";
+                //labelPrice.Text = "руб.";
+                labelDeveloper.Text = "РАЗРАБОТЧИК: ";
+                labelPromoter.Text = "ИЗДАТЕЛЬ: ";
+                label2.Text = "Дата выхода ";
             }
 
 
