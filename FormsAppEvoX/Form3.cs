@@ -20,13 +20,13 @@ namespace FormsAppEvoX
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*
-           File.AppendAllText("CharactersFiles.txt", Environment.NewLine + textBox1.Text + "; " + Filtergames);   
-            textBox1.text + "; игры; 10");
+            
+           File.AppendAllText("../../../Маркет плэйс.txt", Environment.NewLine + 
+               textBox1.Text + ", " + textBox2.Text + ", Приключения, 5");
 
-           File.Create("../../Files/Игры/" + TextBox1.Text + ".txt");
+           File.Create("../../Маркет плэйс/" + textBox1.Text + ".txt");
            MessageBox.Show("Получилось");
-            */
+            
 
         }
 
@@ -35,7 +35,17 @@ namespace FormsAppEvoX
 
         }
 
+        string address;
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                address = openFileDialog1.FileName;
+                pictureBox1.Load(address);         
+            }
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
         }

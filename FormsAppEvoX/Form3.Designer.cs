@@ -40,6 +40,7 @@ namespace FormsAppEvoX
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +71,12 @@ namespace FormsAppEvoX
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Гонки",
+            "Бродилки",
+            "Квест",
+            "Приключения",
+            "Аркады"});
             this.comboBox1.Location = new System.Drawing.Point(113, 92);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(219, 24);
@@ -138,6 +145,11 @@ namespace FormsAppEvoX
             this.label5.TabIndex = 10;
             this.label5.Text = "Картинка";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
             // AddGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,5 +187,6 @@ namespace FormsAppEvoX
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

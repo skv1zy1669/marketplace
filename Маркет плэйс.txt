@@ -10,3 +10,4 @@ Mirrors Edge, 1000, action-adventure, 5
 CALL of DUTY WTR, 900, Приключения, 4
 GTA V, 1499, Приключения, 4
 Destiny, 5600, Приключения, 5
+Cyberpunk 2077, 1999, Приключения, 5
