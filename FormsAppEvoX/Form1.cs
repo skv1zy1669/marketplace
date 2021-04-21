@@ -51,11 +51,12 @@ namespace FormsAppEvoX
             foreach (string line in lines)
             {
                 string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
-                games_list.Add(
-                    new Game(parts[0],          //Название
-                    Convert.ToInt32(parts[1]),  //Цена
-                    parts[2], 
-                    Convert.ToInt32(parts[3])));//Рейтинг
+                if (parts.Length > 3)
+                    games_list.Add(
+                        new Game(parts[0],          //Название
+                        Convert.ToInt32(parts[1]),  //Цена
+                        parts[2], 
+                        Convert.ToInt32(parts[3])));//Рейтинг
             }
 
 

@@ -30,13 +30,13 @@ namespace FormsAppEvoX
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameTB = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.infoTB = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,12 +54,12 @@ namespace FormsAppEvoX
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // nameTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 22);
-            this.textBox1.TabIndex = 1;
+            this.nameTB.Location = new System.Drawing.Point(113, 34);
+            this.nameTB.Name = "nameTB";
+            this.nameTB.Size = new System.Drawing.Size(219, 22);
+            this.nameTB.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -110,13 +110,13 @@ namespace FormsAppEvoX
             this.label3.TabIndex = 6;
             this.label3.Text = "Цена";
             // 
-            // textBox3
+            // infoTB
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 204);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(653, 234);
-            this.textBox3.TabIndex = 7;
+            this.infoTB.Location = new System.Drawing.Point(113, 204);
+            this.infoTB.Multiline = true;
+            this.infoTB.Name = "infoTB";
+            this.infoTB.Size = new System.Drawing.Size(653, 234);
+            this.infoTB.TabIndex = 7;
             // 
             // label4
             // 
@@ -158,13 +158,13 @@ namespace FormsAppEvoX
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.infoTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameTB);
             this.Controls.Add(this.button1);
             this.Name = "AddGame";
             this.Text = "Добавить игру";
@@ -177,13 +177,13 @@ namespace FormsAppEvoX
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameTB;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox infoTB;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;

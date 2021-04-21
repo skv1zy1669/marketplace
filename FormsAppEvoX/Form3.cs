@@ -22,9 +22,13 @@ namespace FormsAppEvoX
         {
             
            File.AppendAllText("../../../Маркет плэйс.txt", Environment.NewLine + 
-               textBox1.Text + ", " + textBox2.Text + ", Приключения, 5");
+               nameTB.Text + ", " + textBox2.Text + ", Приключения, 5");
 
-           File.Create("../../Маркет плэйс/" + textBox1.Text + ".txt");
+            FileStream f = File.Create("../../Маркет плэйс/" + nameTB.Text + ".txt");
+            f.Close();
+            File.WriteAllText("../../Маркет плэйс/" + nameTB.Text + ".txt", infoTB.Text);
+            File.Copy(address, "../../Маркет плэйс/" + nameTB.Text + ".jpg");
+            string s = "../../Маркет плэйс/" + nameTB.Text + ".jpg";
            MessageBox.Show("Получилось");
             
 

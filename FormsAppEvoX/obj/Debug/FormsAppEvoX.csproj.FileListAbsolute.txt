@@ -1,8 +1,8 @@
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe.config
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.pdb
-D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csprojAssemblyReference.cache
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Form1.resources
+D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.AddGame.resources
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.GameForm.resources
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.KorzinaForm.resources
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Properties.Resources.resources
@@ -10,4 +10,4 @@ D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.CoreCompileInputs.cache
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb
-D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.AddGame.resources
+D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csprojAssemblyReference.cache
