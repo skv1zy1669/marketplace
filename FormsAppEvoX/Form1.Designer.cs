@@ -36,8 +36,9 @@ namespace FormsAppEvoX
             this.Корзина = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.AddGameButton = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@ namespace FormsAppEvoX
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.AddGameButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.searchButton);
@@ -113,14 +115,16 @@ namespace FormsAppEvoX
             this.panel1.Size = new System.Drawing.Size(1023, 100);
             this.panel1.TabIndex = 25;
             // 
-            // panel2
+            // button1
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 100);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1023, 378);
-            this.panel2.TabIndex = 26;
+            this.button1.Location = new System.Drawing.Point(124, 9);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 56);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Sing in";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Form4_Click);
             // 
             // AddGameButton
             // 
@@ -131,7 +135,18 @@ namespace FormsAppEvoX
             this.AddGameButton.TabIndex = 20;
             this.AddGameButton.Text = "Добавить игру";
             this.AddGameButton.UseVisualStyleBackColor = true;
+            this.AddGameButton.Visible = false;
             this.AddGameButton.Click += new System.EventHandler(this.AddGameButton_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1023, 378);
+            this.panel2.TabIndex = 26;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Form1
             // 
@@ -165,6 +180,7 @@ namespace FormsAppEvoX
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button AddGameButton;
+        private System.Windows.Forms.Button button1;
     }
 }
 

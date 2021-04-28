@@ -27,8 +27,9 @@ namespace FormsAppEvoX
             FileStream f = File.Create("../../Маркет плэйс/" + nameTB.Text + ".txt");
             f.Close();
             File.WriteAllText("../../Маркет плэйс/" + nameTB.Text + ".txt", infoTB.Text);
+            if (!File.Exists("../../Маркет плэйс/" + nameTB.Text + ".txt"))
             File.Copy(address, "../../Маркет плэйс/" + nameTB.Text + ".jpg");
-            string s = "../../Маркет плэйс/" + nameTB.Text + ".jpg";
+
            MessageBox.Show("Получилось");
             
 

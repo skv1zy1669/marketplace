@@ -11,3 +11,4 @@ D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csprojAssemblyReference.cache
+D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.LoginForm.resources

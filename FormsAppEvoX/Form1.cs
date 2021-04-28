@@ -181,7 +181,20 @@ namespace FormsAppEvoX
         private void AddGameButton_Click(object sender, EventArgs e)
         {
             AddGame form = new AddGame();
-            form.Show();
+            form.ShowDialog();
+        }
+
+        private void Form4_Click(object sender, EventArgs e)
+        {
+            LoginForm form = new LoginForm();
+            form.ShowDialog();
+
+            AddGameButton.Visible = (LoginForm.Login == "Admin");
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
