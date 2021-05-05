@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -56,8 +59,46 @@ namespace FormsAppEvoX
                 picture.Tag = game1.name;
                 picture.Click += new EventHandler(Form1.OpenGame);
                 Controls.Add(picture);
-
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // отправитель - устанавливаем адрес и отображаемое в письме имя
+            MailAddress from = new MailAddress("mikki.abrams1234567890@gmail.com", "Tom");
+            // кому отправляем
+            MailAddress to = new MailAddress("fantazygdh@gmail.ru");
+            // создаем объект сообщения
+            MailMessage m = new MailMessage(from, to);
+
+            // тема письма
+            m.Subject = "Текст";
+
+            // текст письма
+            m.Body = "Привет!" +
+                Environment.NewLine + "Эти игры находятся у вас в избраные";
+
+            File.WriteAllText("Заказ.csv", "Название, Жанр, Цена");
+            foreach (Game game1 in Form1.korzina)
+            {
+                File.AppendAllText("Заказ.csv",
+                     Environment.NewLine + 
+                     game1.name + ",\"" + game1.genre + "\"," + game1.price);
+            }
+
+            //m.Attachments.Add(new Attachment("-_-"));
+            m.Attachments.Add(new Attachment("Заказ.csv"));
+            //адрес smtp-сервера и порт, с которого будем отправлять письмо
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            // логин и пароль
+            smtp.Credentials = new NetworkCredential(from.Address, "Beavis123");
+            smtp.EnableSsl = true;
+            smtp.Send(m);
+
+            MessageBox.Show("Отправлено");
+
+
+
         }
     }
 }
