@@ -34,9 +34,9 @@ namespace FormsAppEvoX
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1097, 13);
+            this.button1.Location = new System.Drawing.Point(36, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(117, 39);
             this.button1.TabIndex = 0;
             this.button1.Text = "Письмо";
             this.button1.UseVisualStyleBackColor = true;

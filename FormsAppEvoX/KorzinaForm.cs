@@ -35,7 +35,7 @@ namespace FormsAppEvoX
                     x = x + 160;
                     if (x + 160 > Width)
                     {
-                        x = 15;
+                        x = 20;
                         y = y + 225;
                     }
                 }   

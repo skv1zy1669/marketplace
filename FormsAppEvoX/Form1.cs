@@ -60,8 +60,8 @@ namespace FormsAppEvoX
             }
 
 
-            int x = 1;
-            int y = 80;
+            int x = 10;
+            int y = 40;
             for (int i = 0; i < games_list.Count; i++)
             {
                 # region Формируем картинку
@@ -87,12 +87,12 @@ namespace FormsAppEvoX
                 #endregion
 
                 #region Подпись к картинке
-                games_list[i].label.AutoSize = true;
+                //games_list[i].label.AutoSize = true;
                 games_list[i].label.BackColor = Color.Transparent;
                 games_list[i].label.ForeColor = Color.Brown;
                 games_list[i].label.Font = new Font("Microsoft Sans Serif", 15);
                 games_list[i].label.Location = new Point(x + 10, y + 200);
-                games_list[i].label.Size = new Size(150, 20);
+                games_list[i].label.Size = new Size(150, 30);
                 games_list[i].label.Text = games_list[i].name;
                 panel2.Controls.Add(games_list[i].label);
                 #endregion
@@ -102,9 +102,11 @@ namespace FormsAppEvoX
                 if (x + 160 > Width)
                 {
                     x = 15;
-                    y = y + 225;
+                    y = y + 235;
                 }
             }
+
+            SearchClick(null, null);
         }
         public static void OpenGame(object sender, EventArgs e)
         {
@@ -121,6 +123,7 @@ namespace FormsAppEvoX
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            SearchClick(null, null);
         }
 
         
@@ -130,7 +133,7 @@ namespace FormsAppEvoX
         private void SearchClick(object sender, EventArgs e)
         {
             int x = 10;
-            int y = 80;
+            int y = 40;
             for (int i = 0; i < games_list.Count; i++)
             {
                 games_list[i].picture.Visible = true;
@@ -161,7 +164,7 @@ namespace FormsAppEvoX
                     if (x + 160 > Width)
                     {
                         x = 15;
-                        y = y + 225;
+                        y = y + 235;
                     }
                 }
             }
@@ -193,6 +196,10 @@ namespace FormsAppEvoX
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
