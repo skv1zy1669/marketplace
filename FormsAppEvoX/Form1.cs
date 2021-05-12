@@ -17,9 +17,10 @@ namespace FormsAppEvoX
         public Label label;
         public string name;
         public string genre;
+        public string developer;
         public int price;
         public int rating;
-        public Game(string name1, int price1, string genre1, int rating1)
+        public Game(string name1, int price1, string genre1, int rating1, string developer1)
         {
             picture = new PictureBox();
             label = new Label();
@@ -27,6 +28,7 @@ namespace FormsAppEvoX
             price = price1;
             genre = genre1;
             rating = rating1;
+            developer = developer1;
         }
     }
 
@@ -56,7 +58,8 @@ namespace FormsAppEvoX
                         new Game(parts[0],          //Название
                         Convert.ToInt32(parts[1]),  //Цена
                         parts[2], 
-                        Convert.ToInt32(parts[3])));//Рейтинг
+                        Convert.ToInt32(parts[3]),//Рейтинг
+                        parts[4]));
             }
 
 

@@ -60,11 +60,10 @@ namespace FormsAppEvoX
             // 
             // GamePicture
             // 
-            this.GamePicture.Dock = System.Windows.Forms.DockStyle.Left;
             this.GamePicture.Image = ((System.Drawing.Image)(resources.GetObject("GamePicture.Image")));
-            this.GamePicture.Location = new System.Drawing.Point(0, 0);
+            this.GamePicture.Location = new System.Drawing.Point(0, 99);
             this.GamePicture.Name = "GamePicture";
-            this.GamePicture.Size = new System.Drawing.Size(581, 918);
+            this.GamePicture.Size = new System.Drawing.Size(581, 728);
             this.GamePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.GamePicture.TabIndex = 4;
             this.GamePicture.TabStop = false;
@@ -73,7 +72,7 @@ namespace FormsAppEvoX
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(611, 9);
+            this.label1.Location = new System.Drawing.Point(611, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(230, 69);
             this.label1.TabIndex = 5;
@@ -83,7 +82,7 @@ namespace FormsAppEvoX
             // 
             this.labelDeveloper.AutoSize = true;
             this.labelDeveloper.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDeveloper.Location = new System.Drawing.Point(618, 158);
+            this.labelDeveloper.Location = new System.Drawing.Point(618, 267);
             this.labelDeveloper.Name = "labelDeveloper";
             this.labelDeveloper.Size = new System.Drawing.Size(251, 29);
             this.labelDeveloper.TabIndex = 5;
@@ -93,7 +92,7 @@ namespace FormsAppEvoX
             // 
             this.labelPromoter.AutoSize = true;
             this.labelPromoter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPromoter.Location = new System.Drawing.Point(618, 220);
+            this.labelPromoter.Location = new System.Drawing.Point(618, 296);
             this.labelPromoter.Name = "labelPromoter";
             this.labelPromoter.Size = new System.Drawing.Size(238, 29);
             this.labelPromoter.TabIndex = 11;
@@ -103,7 +102,7 @@ namespace FormsAppEvoX
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(618, 282);
+            this.label3.Location = new System.Drawing.Point(618, 325);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(519, 29);
             this.label3.TabIndex = 12;
@@ -122,7 +121,7 @@ namespace FormsAppEvoX
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(618, 338);
+            this.label2.Location = new System.Drawing.Point(618, 357);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(306, 29);
             this.label2.TabIndex = 17;
@@ -164,7 +163,7 @@ namespace FormsAppEvoX
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(618, 531);
+            this.label6.Location = new System.Drawing.Point(603, 534);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(672, 269);
             this.label6.TabIndex = 21;
@@ -175,7 +174,7 @@ namespace FormsAppEvoX
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1327, 918);
+            this.ClientSize = new System.Drawing.Size(1327, 1055);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox6);
@@ -189,7 +188,7 @@ namespace FormsAppEvoX
             this.Controls.Add(this.labelPrice);
             this.Controls.Add(this.GamePicture);
             this.Name = "GameForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Страница игры";
             this.TransparencyKey = System.Drawing.Color.WhiteSmoke;
             this.Load += new System.EventHandler(this.GameForm_Load);

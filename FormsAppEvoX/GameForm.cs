@@ -57,7 +57,7 @@ namespace FormsAppEvoX
             for (int i = 0; i < game1.rating; i++)
             {
                 PictureBox picture = new PictureBox();
-                picture.Location = new Point(460 + 40 * i, 65);
+                picture.Location = new Point(460 + 40 * i, 158);
                 picture.Size = new Size(40, 40);
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
                 picture.Load("../../Маркет плэйс/звездочка.jpeg");
@@ -65,10 +65,14 @@ namespace FormsAppEvoX
             }
 
 
+
+            labelDeveloper.Text = "РАЗРАБОТЧИК: " + game1.developer;
+
+
             if (game ==  "Dirt 2.0")
             {
                 //labelPrice.Text = " руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Codemasters";
+                //labelDeveloper.Text = "РАЗРАБОТЧИК: Codemasters";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: Codemasters";
                 label2.Text = "Дата выхода: 2019";
             }
@@ -76,7 +80,7 @@ namespace FormsAppEvoX
             if (game == "")
             {
                 //labelPrice.Text = "руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: ";
+                //labelDeveloper.Text = "РАЗРАБОТЧИК: ";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: ";
                 label2.Text = "Дата выхода ";
             }
@@ -84,7 +88,7 @@ namespace FormsAppEvoX
             if (game == "")
             {
                 //labelPrice.Text = " руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: ";
+               // labelDeveloper.Text = "РАЗРАБОТЧИК: ";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: ";
                 label2.Text = "Дата выхода ";
             }
@@ -92,7 +96,7 @@ namespace FormsAppEvoX
             if (game == "")
             {
                 //labelPrice.Text = "руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: ";
+               //labelDeveloper.Text = "РАЗРАБОТЧИК: ";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: ";
                 label2.Text = "Дата выхода ";
             }
@@ -109,7 +113,7 @@ namespace FormsAppEvoX
             if (game == "Red Dead Redemption 2")
             {
                 //labelPrice.Text = "2499 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
+                //labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
                 label2.Text = "Дата выхода 5 Дек. 2019";
             }
@@ -117,7 +121,7 @@ namespace FormsAppEvoX
             if (game == "Rust")
             {
                 //labelPrice.Text = "725 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Facepunch Studios";
+                //labelDeveloper.Text = "РАЗРАБОТЧИК: Facepunch Studios";
                 labelPromoter.Text = "ИЗДАТЕЛЬ: Facepunch Studios";
                 label2.Text = "Дата выходa 8 фев. 2018";
             }
@@ -141,9 +145,9 @@ namespace FormsAppEvoX
             if (game == "CS GO")
             {
                 //  labelPrice.Text = "Бесплатно";
-                labelDeveloper.Text = "ДАТА ВЫХОДА: 21 авг. 2012";
-                labelPromoter.Text = "РАЗРАБОТЧИК:Valve, Hidden Path Entertainment";
-                label2.Text = "ИЗДАТЕЛЬ:Valve";
+                labelDeveloper.Text = "РАЗРАБОТЧИК:Valve, Hidden Path Entertainment";
+                labelPromoter.Text = "ИЗДАТЕЛЬ:Valve";
+                label2.Text = "ДАТА ВЫХОДА: 21 авг. 2012";
             }
             if (game == "Mortal Kombat")
             {
