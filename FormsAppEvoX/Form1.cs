@@ -18,9 +18,10 @@ namespace FormsAppEvoX
         public string name;
         public string genre;
         public string developer;
+        public string promoter;
         public int price;
         public int rating;
-        public Game(string name1, int price1, string genre1, int rating1, string developer1)
+        public Game(string name1, int price1, string genre1, int rating1, string developer1, string promoter1)
         {
             picture = new PictureBox();
             label = new Label();
@@ -29,6 +30,7 @@ namespace FormsAppEvoX
             genre = genre1;
             rating = rating1;
             developer = developer1;
+            promoter = promoter1;
         }
     }
 
@@ -44,22 +46,78 @@ namespace FormsAppEvoX
         /// </summary>
         public static List<Game> korzina = new List<Game>();
 
+        public static Dictionary<string, string> RusWords = new Dictionary<string, string>();
+        public static Dictionary<string, string> EngWords = new Dictionary<string, string>();
+        public static string Language = "Ru";
+
+        private void Russian_Click(object sender, EventArgs e)
+        {
+            translate(RusWords);
+            Language = "Ru";
+        }
+
+        private void English_Click(object sender, EventArgs e)
+        {
+            translate(EngWords);
+            Language = "En";
+        }
+
+        void translate(Dictionary<string, string> words)
+        {
+            searchButton.Text = words["Найти"];
+            Корзина.Text = words["Корзина"];
+            button1.Text = words["Войти"];
+        }
+
         public Form1()
         {
             InitializeComponent();
+
+            RusWords.Add("Название", "Название");
+            EngWords.Add("Название", "Name");
+            RusWords.Add("Найти", "Найти");
+            EngWords.Add("Найти", "find");
+            RusWords.Add("Корзина", "Корзина");
+            EngWords.Add("Корзина", "Korzina");
+            RusWords.Add("Войти", "Войти");
+            EngWords.Add("Войти", "Sign in");
+            RusWords.Add("Имя пользователя", "Имя пользователя");
+            EngWords.Add("Имя пользователя", "Username");
+            RusWords.Add("Пароль", "Пароль");
+            EngWords.Add("Пароль", "Password");
+            RusWords.Add("Авторизация", "Авторизация");
+            EngWords.Add("Авторизация", "Authorization");
+            RusWords.Add("Добавить игру", "Добавить игру");
+            EngWords.Add("Добавить игру", "Add Game");
+            RusWords.Add("Издатель", "Издатель");
+            EngWords.Add("Издатель", "Publisher");
+            RusWords.Add("Разработчик", "Разработчик");
+            EngWords.Add("Разработчик", "Developer");
+            RusWords.Add("Дата выхода", "Дата выхода");
+            EngWords.Add("Дата выхода", "Release date");
+            RusWords.Add("Описание", "Описание");
+            EngWords.Add("Описание", "Description");
+            RusWords.Add("Платформы", "Платформы");
+            EngWords.Add("Платформы", "Platforms");
+            RusWords.Add("Название игры", "Название игры");
+            EngWords.Add("Название игры", "Game Name");
+            RusWords.Add("Цена", "Цена");
+            EngWords.Add("Цена", "Price");
+
 
 
             string[] lines = File.ReadAllLines("../../../Маркет плэйс.txt");
             foreach (string line in lines)
             {
                 string[] parts = line.Split(new string[] { ", " }, StringSplitOptions.None);
-                if (parts.Length > 3)
+                if (parts.Length > 5)
                     games_list.Add(
                         new Game(parts[0],          //Название
                         Convert.ToInt32(parts[1]),  //Цена
                         parts[2], 
                         Convert.ToInt32(parts[3]),//Рейтинг
-                        parts[4]));
+                        parts[4],
+                        parts[5]));
             }
 
 

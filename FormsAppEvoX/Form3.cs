@@ -22,7 +22,7 @@ namespace FormsAppEvoX
         {
             
            File.AppendAllText("../../../Маркет плэйс.txt", Environment.NewLine + 
-               nameTB.Text + ", " + textBox2.Text + ", Приключения, 5");
+               nameTB.Text + ", " + textBox2.Text + ", Приключения, 5, Разработчик, Издатель,");
 
             FileStream f = File.Create("../../Маркет плэйс/" + nameTB.Text + ".txt");
             f.Close();

@@ -1,18 +1,18 @@
-R.D.R, 2499, Выживание, 5, Rockstar Games
-Rust, 725, Приключения, 4, Facepunch Studios
-L.A.Noire, 2000, Приключения, 3, Team Bondi
-CALL of DUTY, 2000, Приключения, 5, 
-CS GO, 0, Шутер, 5 , Valve, Hidden Path Entertainment
-Mortal Kombat, 700, Фентази, 5, NetherRealm Studios, QLOC, Shiver
-Forza, 800, Гонки, 4, Playground Games, Turn 10 Studios
-WITCHER, 1500, Рпг, 5, CD PROJEKT RED
-Mirrors Edge, 1000, action-adventure, 5, EA DICE
-CALL of DUTY WTR, 900, Приключения, 4, CD PROJEKT RED
-GTA V, 1499, Приключения, 4, Rockstar North
-Destiny, 5600, Приключения, 5, Разработчик: Bungel 
-Cyberpunk 2077, 1999, Приключения, 5, 
-STALKER Зов Припяти, 1499, Приключения, 5, 
-Dirt 2.0, 825, Приключения, 5, 
-DARK SOULS™ III, 1999, Приключения, 5, 
-Half-Live Alyx, 1085, Приключения, 5, 
-Need for Speed, 1399, Приключения, 5, 
+R.D.R, 2499, Выживание, 5, Rockstar Games, Rockstar Games
+Rust, 725, Приключения, 4, Facepunch Studios,  Facepunch Studios 
+L.A.Noire, 2000, Приключения, 3, Team Bondi, Rockstar games
+CALL of DUTY, 2000, Приключения, 5, CD PROJEKT RED, CD PROJEKT RED
+CS GO, 0, Шутер, 5 , Valve, Hidden Path Entertainment, 
+Mortal Kombat, 700, Фентази, 5, NetherRealm Studios+QLOC+Shiver, Warner Bros Interactive Entertainment
+Forza, 800, Гонки, 4, Playground Games, Turn 10 Studios, Playground Games, Turn 10 Studios
+WITCHER, 1500, Рпг, 5, CD PROJEKT RED, CD PROJEKT RED
+Mirrors Edge, 1000, action-adventure, 5, EA DICE, EA DICE
+CALL of DUTY WTR, 900, Приключения, 4, CD PROJEKT RED, CD PROJEKT RED 
+GTA V, 1499, Приключения, 4, Rockstar North, Rockstar Games
+Destiny, 5600, Приключения, 5, Bungel , Activision
+Cyberpunk 2077, 1999, Приключения, 5, , 
+STALKER Зов Припяти, 1499, Приключения, 5, , 
+Dirt 2.0, 825, Приключения, 5, , Codemasters
+DARK SOULS™ III, 1999, Приключения, 5, , 
+Half-Live Alyx, 1085, Приключения, 5, , 
+Need for Speed, 1399, Приключения, 5, , 

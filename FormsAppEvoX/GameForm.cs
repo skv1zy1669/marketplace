@@ -16,7 +16,15 @@ namespace FormsAppEvoX
         /// <summary>
         /// Выбранная игра
         /// </summary>
-        Game game1;
+        Game game1; 
+        void translate(Dictionary<string, string> words)
+        {
+            labelDeveloper.Text = words["Разработчик"];
+            labelPromoter.Text = words["Издатель"];
+            label5.Text = words["Описание"];
+            label2.Text = words["Дата выхода"];
+            label3.Text = words["Платформы"];
+        }
 
         public GameForm(string game)
         {
@@ -67,139 +75,95 @@ namespace FormsAppEvoX
 
 
             labelDeveloper.Text = "РАЗРАБОТЧИК: " + game1.developer;
+            labelPromoter.Text = "ИЗДАТЕЛЬ: " + game1.promoter;
+
+            if (Form1.Language == "En")
+            {
+                labelDeveloper.Text = Form1.EngWords["Разработчик"] + ": " + game1.developer; ;
+                labelPromoter.Text = Form1.EngWords["Издатель"] + ": " + game1.promoter;
+            }
 
 
             if (game ==  "Dirt 2.0")
             {
-                //labelPrice.Text = " руб.";
-                //labelDeveloper.Text = "РАЗРАБОТЧИК: Codemasters";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Codemasters";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ: Codemasters";
                 label2.Text = "Дата выхода: 2019";
             }
 
-            if (game == "")
-            {
-                //labelPrice.Text = "руб.";
-                //labelDeveloper.Text = "РАЗРАБОТЧИК: ";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: ";
-                label2.Text = "Дата выхода ";
-            }
-
-            if (game == "")
-            {
-                //labelPrice.Text = " руб.";
-               // labelDeveloper.Text = "РАЗРАБОТЧИК: ";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: ";
-                label2.Text = "Дата выхода ";
-            }
-
-            if (game == "")
-            {
-                //labelPrice.Text = "руб.";
-               //labelDeveloper.Text = "РАЗРАБОТЧИК: ";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: ";
-                label2.Text = "Дата выхода ";
-            }
-
-
-
-
-
-
-
+           
+           
 
 
 
             if (game == "Red Dead Redemption 2")
             {
-                //labelPrice.Text = "2499 руб.";
-                //labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar Games";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
                 label2.Text = "Дата выхода 5 Дек. 2019";
             }
 
             if (game == "Rust")
             {
-                //labelPrice.Text = "725 руб.";
-                //labelDeveloper.Text = "РАЗРАБОТЧИК: Facepunch Studios";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Facepunch Studios";
+                
+                //labelPromoter.Text = "ИЗДАТЕЛЬ: Facepunch Studios";
                 label2.Text = "Дата выходa 8 фев. 2018";
             }
 
             if (game == "GTA V")
             {
-                //labelPrice.Text = "1499 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar North";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
+               
+                //labelDeveloper.Text = "РАЗРАБОТЧИК: Rockstar North";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ: Rockstar Games";
                 label2.Text = "Дата выхода 14 апр. 2015";
             }
 
             if (game == "Destiny")
             {
-                // labelPrice.Text = "5591 руб.";
-                labelDeveloper.Text = "Разработчик: Bungel";
-                labelPromoter.Text = "Издатель: Activision";
+                //labelPromoter.Text = "Издатель: Activision";
                 label2.Text = "Дата выхода: 10 ноя. 2020";
             }
 
             if (game == "CS GO")
             {
-                //  labelPrice.Text = "Бесплатно";
-                labelDeveloper.Text = "РАЗРАБОТЧИК:Valve, Hidden Path Entertainment";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:Valve";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:Valve";
                 label2.Text = "ДАТА ВЫХОДА: 21 авг. 2012";
             }
             if (game == "Mortal Kombat")
             {
-                //   labelPrice.Text = "690 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК:  NetherRealm Studios, QLOC, Shiver";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:  Warner Bros Interactive Entertainment";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:  Warner Bros Interactive Entertainment";
                 label2.Text = "Дата выхода 23 апр. 2019";
             }
             if (game == "Forza")
             {
-                //   labelPrice.Text = "800 руб";
-                labelDeveloper.Text = "РАЗРАБОТЧИК:  Playground Games, Turn 10 Studios";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:  Playground Games, Turn 10 Studios";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:  Playground Games, Turn 10 Studios";
                 label2.Text = "Дата выхода 2018 г.";
             }
             if (game == "Mirrors Edge")
             {
-                //  labelPrice.Text = "999 руб.";
-                labelDeveloper.Text = "РАЗРАБОТЧИК: EA DICE";
-                labelPromoter.Text = "ИЗДАТЕЛЬ: EA DICE";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ: EA DICE";
                 label2.Text = "Дата выхода 2008 г.";
             }
 
             if (game == "WITCHER")
             {
-                //labelPrice.Text = "1354 руб";
-                labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2018 г.";
             }
 
 
             if (game == "CALL of DUTY WTR")
             {
-                //labelPrice.Text = "899 руб";
-                labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2008 г.";
             }
 
             if (game == "CALL of DUTY")
             {
-               // labelPrice.Text = "1999 руб";
-                labelDeveloper.Text = "РАЗРАБОТЧИК; CD PROJEKT RED";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:  CD PROJEKT RED";
                 label2.Text = "Дата выхода 2018 г.";
             }
             if (game == "L.A Noire")
             {
-             //   labelPrice.Text = "699 руб";
-                labelDeveloper.Text = "РАЗРАБОТЧИК; Team Bondi";
-                labelPromoter.Text = "ИЗДАТЕЛЬ:  Rockstar games";
+                //labelPromoter.Text = "ИЗДАТЕЛЬ:  Rockstar games";
                 label2.Text = "Дата выхода 8 ноя.2011 г.";
             }
 
