@@ -24,6 +24,8 @@ namespace FormsAppEvoX
         {
             int x = 10;
             int y = 80;
+            Controls.Clear();
+            Controls.Add(button1);
             foreach (Game game1 in Form1.korzina)
             {
                 PictureBox picture = new PictureBox();
@@ -31,14 +33,6 @@ namespace FormsAppEvoX
                 picture.Size = new Size(150, 200);
                 picture.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                {     //Координаты
-                    x = x + 160;
-                    if (x + 160 > Width)
-                    {
-                        x = 20;
-                        y = y + 225;
-                    }
-                }   
 
 
                 try
@@ -58,10 +52,39 @@ namespace FormsAppEvoX
 
                 picture.Tag = game1.name;
                 picture.Click += new EventHandler(Form1.OpenGame);
+
+                Button btn = new Button();
+                btn.Tag = game1.name;
+                btn.Location = new Point(x + 130, y);
+                btn.Size = new Size(20, 20);
+                btn.Text = "X";
+                btn.Click += new EventHandler(DeleteGame);
+                Controls.Add(btn);
                 Controls.Add(picture);
+                //Координаты
+                x = x + 160;
+                if (x + 160 > Width)
+                {
+                    x = 20;
+                    y = y + 225;
+                }
             }
         }
 
+        private void DeleteGame(object sender, EventArgs e)
+        {
+            string game = ((Button)sender).Tag.ToString();
+
+            Game game1 = new Game();
+            foreach (Game g in Form1.korzina)
+            {
+                if (g.name == game)
+                    game1 = g;
+            }
+
+            Form1.korzina.Remove(game1);
+            KorzinaForm_Load(sender, e);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             // отправитель - устанавливаем адрес и отображаемое в письме имя
