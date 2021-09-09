@@ -12,3 +12,17 @@ D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.LoginForm.resources
 D:\НГ_pk23\Маркет\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csprojAssemblyReference.cache
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe.config
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.exe
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\bin\Debug\FormsAppEvoX.pdb
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.AssemblyReference.cache
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Form1.resources
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.AddGame.resources
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.LoginForm.resources
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.GameForm.resources
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.KorzinaForm.resources
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.Properties.Resources.resources
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.GenerateResource.cache
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.csproj.CoreCompileInputs.cache
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.exe
+C:\Users\beavi\Downloads\git\marketplace\FormsAppEvoX\obj\Debug\FormsAppEvoX.pdb

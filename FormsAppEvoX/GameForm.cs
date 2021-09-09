@@ -16,7 +16,7 @@ namespace FormsAppEvoX
         /// <summary>
         /// Выбранная игра
         /// </summary>
-        Game game1; 
+        public Game game1; 
         void translate(Dictionary<string, string> words)
         {
             labelDeveloper.Text = words["Разработчик"];

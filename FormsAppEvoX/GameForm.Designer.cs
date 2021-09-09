@@ -202,13 +202,13 @@ namespace FormsAppEvoX
 
         #endregion
         private System.Windows.Forms.PictureBox GamePicture;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelDeveloper;
         private System.Windows.Forms.Label labelPromoter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelPrice;
+        public System.Windows.Forms.Label labelPrice;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label5;
